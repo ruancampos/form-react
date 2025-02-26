@@ -1,4 +1,5 @@
-import { Alert, Button, StyleSheet, Text, View } from "react-native";
+import { Alert, StyleSheet, Text, View } from "react-native";
+import Button from "../components/button/index";
 
 function Index() {
   function handleSubmit() {
@@ -8,7 +9,7 @@ function Index() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}> hello, world</Text>
-      <Button title="Enviar" onPress={handleSubmit} />
+      <Button label={"enviar"} onPress={handleSubmit} />
     </View>
   );
 }
@@ -23,6 +24,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 32,
     justifyContent: "center",
+    gap: 12
   },
 });
 

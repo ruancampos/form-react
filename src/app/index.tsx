@@ -1,5 +1,6 @@
 import { Alert, StyleSheet, Text, View } from "react-native";
 import Button from "../components/button/index";
+import Input from "../components/input";
 
 function Index() {
   function handleSubmit() {
@@ -9,6 +10,7 @@ function Index() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}> hello, world</Text>
+      <Input />
       <Button label={"enviar"} onPress={handleSubmit} activeOpacity={1} />
       <Button label={"continuar"} onPress={handleSubmit} />
     </View>

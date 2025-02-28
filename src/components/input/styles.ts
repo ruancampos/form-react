@@ -11,7 +11,11 @@ input: {
     color: "#FFF",
     fontSize: 16,
     padding: 12,
+},
+label:{
+    fontSize: 14,
+    color: "#FFF"
 }
-})
+});
 
 export default styles;

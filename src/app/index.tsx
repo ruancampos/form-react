@@ -2,6 +2,7 @@ import { Alert, StyleSheet, Text, View } from "react-native";
 import Button from "@/components/button/index";
 import Input from "@/components/input/index";
 import { useState } from "react";
+import { router } from "expo-router";
 
 function Index() {
   const [name, setName] = useState("usuario");
@@ -12,13 +13,17 @@ function Index() {
     alert(`ola, ${name}`);
   }
 
+  function handleNext() {
+    router.navigate("/onboarding")
+  }
+
   return (
     <View style={styles.container}>
       <Text style={styles.text}> hi there, {name} </Text>
       <Input label="nome" onChangeText={setName} />
       <Input label="Idade" />
-      <Button label={"enviar"} onPress={handleSubmit} activeOpacity={1} />
-      <Button label={"continuar"} onPress={handleSubmit} />
+      <Button label={"saudação"} onPress={handleSubmit} activeOpacity={1} />
+      <Button label={"continuar"} onPress={handleNext} />
     </View>
   );
 }

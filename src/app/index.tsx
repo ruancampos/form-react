@@ -27,7 +27,8 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 32,
     justifyContent: "center",
-    gap: 12
+    gap: 12,
+    backgroundColor: "#121212"
   },
 });
 

@@ -9,7 +9,8 @@ function Index() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}> hello, world</Text>
-      <Button label={"enviar"} onPress={handleSubmit} />
+      <Button label={"enviar"} onPress={handleSubmit} activeOpacity={1} />
+      <Button label={"continuar"} onPress={handleSubmit} />
     </View>
   );
 }

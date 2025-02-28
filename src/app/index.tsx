@@ -4,24 +4,18 @@ import Input from "../components/input";
 import { useState } from "react";
 
 function Index() {
-  const [name, setName] = useState<string>();
-  const [name1, setName1] = useState("Juan");
+  const [name, setName] = useState("usuario");
   
 
   function handleSubmit() {
     const name = "Juan";
-    Alert.alert(`ola, ${name}`);
-  }
-
-  function onChangeText(text: string) {
-    console.log(text);
-    setName(text);
+    alert(`ola, ${name}`);
   }
 
   return (
     <View style={styles.container}>
       <Text style={styles.text}> hi there, {name} </Text>
-      <Input label="nome" onChangeText={(text) => console.log(text)} />
+      <Input label="nome" onChangeText={setName} />
       <Input label="Idade" />
       <Button label={"enviar"} onPress={handleSubmit} activeOpacity={1} />
       <Button label={"continuar"} onPress={handleSubmit} />
